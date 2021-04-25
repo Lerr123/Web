@@ -1,0 +1,87 @@
+body{
+    background-color: rgba(207, 206, 207, 0.493);
+    background-image: url(img/noise.png);
+}
+
+
+
+.header{
+    padding-left:  250px;
+    padding-right:  250px;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.naviganion {
+    margin-left:450px;
+}
+.naviganion a{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: rgb(224, 159, 97);
+}
+
+.about{
+    display: grid;
+grid-template-columns: 1fr 1fr;
+padding-left: 250px;
+padding-right: 250px;
+
+align-items: center;
+background-image: url(img/paw.png);
+background-repeat: no-repeat;
+}
+
+
+.about-images{
+    display: grid;
+    grid-template-rows: 250px 250px 250px;
+    gap: 30px;
+    grid-template-areas: "img1 img2"
+                        "img3 img2"
+                        "img3 img4";
+
+}
+.about-images img:nth-last-child(1){
+    grid-area: img1;
+}
+.about-images img:nth-last-child(2){
+    grid-area: img2;
+}
+.about-images img:nth-last-child(3){
+    grid-area: img3;
+}
+.about-images img:nth-last-child(4){
+    grid-area: img4;
+}
+
+.about-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}.about-text{
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+}
+.about-text p:nth-child(1){
+    color: #c88948;
+}
+
+.about-text p:nth-child(3
+){
+    color: rgb(54, 39, 39);
+}
+.about-text a{
+    background: rgb(124, 153, 20);
+    background-image: url(img/noise.png);
+
+    padding: 5 px 20px;
+    border-radius: 5px;
+
+    color: #fff;
+    text-decoration: none;
+}
